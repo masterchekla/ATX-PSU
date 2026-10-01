@@ -82,7 +82,7 @@ J8 is a **12 V panel-mount cigarette-lighter power socket with a protective cap*
 
 ### Schematic
 
-The schematic presents the described low-voltage wiring. ATX pin numbers identify standard signals, rather than physical board pads. The original fan is shown as part of the PSU, and the LED returns are shown to COM.
+The schematic shows the low-voltage wiring with the ATX supply on the left and the output terminals on the right. Wires connect the components directly; dots mark connected junctions. J1 groups equivalent ATX signals, with the standard pin numbers retained in the KiCad symbol. These identify connector signals, not physical board pads. The original fan is shown inside the PSU, and the LED returns connect to COM.
 
 ![Circuit schematic](docs/images/schematic/diy_atx_psu.svg)
 
