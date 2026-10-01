@@ -32,10 +32,10 @@ Pin 20 follows the handout's logical table: reserved / no connection. Original s
 | Purple +5VSB | R1 → green LED → COM |
 | Gray PWR_OK | R2 → red LED → COM |
 | Green PS_ON | Main switch → COM |
-| U1 OUT+ | F4 → adjustable positive terminal in the circuit model |
+| U1 OUT+ | Adjustable positive terminal (direct connection) |
 | U1 OUT− | Adjustable negative terminal |
 
-The original fan remains within the PSU assembly. F1–F3 serve the fixed outputs. The adjustable-section holder is represented as F4 between OUT+ and the positive terminal. The socket, strip and indicators have no separate external branch fuse in this arrangement.
+The original fan remains within the PSU assembly. F1–F3 serve the fixed outputs. OUT+ connects directly to the adjustable positive terminal, without a separate external fuse. The socket, strip and indicators have no separate external branch fuse in this arrangement.
 
 ## Fuse calculation basis
 

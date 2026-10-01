@@ -7,7 +7,6 @@
 | J6–J7 | 2 | Adjustable binding posts | Module OUT+ and OUT− |
 | U1 | 1 | ZK-4KX buck–boost module | Voltage adjustment and current limiting |
 | F1–F3 | 3 | Fuses with panel holders | One per fixed positive output |
-| F4 | 1 holder | Adjustable-section fuse holder | Shown in the positive output path |
 | SW1 | 1 | Maintained switch | Connects PS_ON to COM |
 | D1 | 1 | Green LED | Purple +5VSB indication |
 | D2 | 1 | Red LED | Gray PWR_OK indication |

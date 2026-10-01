@@ -10,7 +10,7 @@ Green uses +5VSB through 1 kΩ. Red uses PWR_OK through 1 kΩ. An ideal 5 V red-
 
 ## Protection
 
-F1–F3 serve the three fixed positive outputs only. The adjustable-section holder is represented by F4 after OUT+ in the circuit model. The converter input, socket and strip connect to PSU outputs; the fan is part of the original PSU assembly. Protection must be coordinated with each branch's wire and components; the main source's protection does not by itself establish protection for every smaller wire. The fuse example uses an assumed 1 A load per fixed branch.
+F1–F3 serve the three fixed positive outputs only. The adjustable output connects directly from OUT+ to its positive terminal and has no separate external fuse. The converter input, socket and strip connect to PSU outputs; the fan is part of the original PSU assembly. Protection must be coordinated with each branch's wire and components; the main source's protection does not by itself establish protection for every smaller wire. The fuse example uses an assumed 1 A load per fixed branch.
 
 ## Conversion losses
 
