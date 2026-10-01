@@ -1,243 +1,640 @@
-(kicad_sch (version 20260306) (generator "eeschema") (generator_version "10.0") (uuid 05a69ad3-73a0-5976-b3df-662b12134f20) (paper "A3")
-(title_block (title "DIY ATX Bench Power Supply") (date "2026-09-26") (rev "1.5"))
-(lib_symbols (symbol "Project:R" (pin_names (offset 1.016)) (in_bom yes) (on_board no)
-    (property "Reference" "R" (at 0 7.62 0) (effects (font (size 1.27 1.27)) ))
-    (property "Value" "R" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) ))
-    (symbol "R_0_1" (rectangle (start -2.54 1.27) (end 2.54 -1.27) (stroke (width 0.254) (type default)) (fill (type background))))
-    (symbol "R_1_1" (pin passive line (at -7.62 0 0) (length 5.08) (name "" (effects (font (size 1.27 1.27)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 7.62 0 180) (length 5.08) (name "" (effects (font (size 1.27 1.27)) )) (number "2" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:Fuse" (pin_names (offset 1.016)) (in_bom yes) (on_board no)
-    (property "Reference" "F" (at 0 7.62 0) (effects (font (size 1.27 1.27)) ))
-    (property "Value" "Fuse" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) ))
-    (symbol "Fuse_0_1" (rectangle (start -2.54 1.27) (end 2.54 -1.27) (stroke (width 0.254) (type default)) (fill (type background)))(polyline (pts (xy -2.54 0) (xy 2.54 0)) (stroke (width 0.254) (type default)) (fill (type none))))
-    (symbol "Fuse_1_1" (pin passive line (at -7.62 0 0) (length 5.08) (name "" (effects (font (size 1.27 1.27)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 7.62 0 180) (length 5.08) (name "" (effects (font (size 1.27 1.27)) )) (number "2" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:LED" (pin_names (offset 1.016)) (in_bom yes) (on_board no)
-    (property "Reference" "D" (at 0 7.62 0) (effects (font (size 1.27 1.27)) ))
-    (property "Value" "LED" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) ))
-    (symbol "LED_0_1" (polyline (pts (xy -2.54 2.54) (xy -2.54 -2.54) (xy 2.54 0) (xy -2.54 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 2.54 2.54) (xy 2.54 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 0 3.81) (xy 2.54 6.35) (xy 1.27 6.35)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 2.54 3.81) (xy 5.08 6.35) (xy 3.81 6.35)) (stroke (width 0.254) (type default)) (fill (type none))))
-    (symbol "LED_1_1" (pin passive line (at -7.62 0 0) (length 5.08) (name "A" (effects (font (size 1.27 1.27)) )) (number "2" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 7.62 0 180) (length 5.08) (name "K" (effects (font (size 1.27 1.27)) )) (number "1" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:Switch" (pin_names (offset 1.016)) (in_bom yes) (on_board no)
-    (property "Reference" "SW" (at 0 7.62 0) (effects (font (size 1.27 1.27)) ))
-    (property "Value" "Switch" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) ))
-    (symbol "Switch_0_1" (polyline (pts (xy -2.54 0) (xy 2.54 2.54)) (stroke (width 0.254) (type default)) (fill (type none))))
-    (symbol "Switch_1_1" (pin passive line (at -7.62 0 0) (length 5.08) (name "" (effects (font (size 1.27 1.27)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 7.62 0 180) (length 5.08) (name "" (effects (font (size 1.27 1.27)) )) (number "2" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:Post" (pin_names (offset 1.016)) (in_bom yes) (on_board no)
-    (property "Reference" "J" (at 0 7.62 0) (effects (font (size 1.27 1.27)) ))
-    (property "Value" "Post" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) ))
-    (symbol "Post_0_1" (circle (center 0 0) (radius 1.27) (stroke (width 0.254) (type default)) (fill (type none))))
-    (symbol "Post_1_1" (pin passive line (at -5.08 0 0) (length 3.81) (name "" (effects (font (size 1.27 1.27)) )) (number "1" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:FanAssembly" (pin_names (offset 1.016)) (in_bom yes) (on_board no)
-    (property "Reference" "M" (at 0 7.62 0) (effects (font (size 1.27 1.27)) ))
-    (property "Value" "FanAssembly" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) ))
-    (symbol "FanAssembly_0_1" (rectangle (start -15.24 5.08) (end 15.24 -5.08) (stroke (width 0.254) (type default)) (fill (type background))))
-    (symbol "FanAssembly_1_1" )) (symbol "Project:Load2" (pin_names (offset 1.016)) (in_bom yes) (on_board no)
-    (property "Reference" "J" (at 0 7.62 0) (effects (font (size 1.27 1.27)) ))
-    (property "Value" "Load2" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) ))
-    (symbol "Load2_0_1" (rectangle (start -7.62 5.08) (end 7.62 -5.08) (stroke (width 0.254) (type default)) (fill (type background))))
-    (symbol "Load2_1_1" (pin passive line (at -12.7 2.54 0) (length 5.08) (name "+" (effects (font (size 1.27 1.27)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -12.7 -2.54 0) (length 5.08) (name "-" (effects (font (size 1.27 1.27)) )) (number "2" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:ZK4KX" (pin_names (offset 1.016)) (in_bom yes) (on_board no)
-    (property "Reference" "U" (at 0 7.62 0) (effects (font (size 1.27 1.27)) ))
-    (property "Value" "ZK4KX" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) ))
-    (symbol "ZK4KX_0_1" (rectangle (start -15.24 10.16) (end 15.24 -10.16) (stroke (width 0.254) (type default)) (fill (type background))))
-    (symbol "ZK4KX_1_1" (pin passive line (at -20.32 5.08 0) (length 5.08) (name "IN+" (effects (font (size 1.27 1.27)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -20.32 -5.08 0) (length 5.08) (name "IN-" (effects (font (size 1.27 1.27)) )) (number "2" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 20.32 5.08 180) (length 5.08) (name "OUT+" (effects (font (size 1.27 1.27)) )) (number "3" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 20.32 -5.08 180) (length 5.08) (name "OUT-" (effects (font (size 1.27 1.27)) )) (number "4" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:ATX24_LOGICAL" (pin_names (offset 1.016)) (in_bom yes) (on_board no)
-    (property "Reference" "J" (at 0 7.62 0) (effects (font (size 1.27 1.27)) ))
-    (property "Value" "ATX24_LOGICAL" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) ))
-    (symbol "ATX24_LOGICAL_0_1" (rectangle (start -20.32 5.08) (end 20.32 -121.92) (stroke (width 0.254) (type default)) (fill (type background))))
-    (symbol "ATX24_LOGICAL_1_1" (pin passive line (at 25.4 0.0 180) (length 5.08) (name "+3V3_RAW" (effects (font (size 1.27 1.27)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -5.08 180) (length 5.08) (name "+3V3_RAW" (effects (font (size 1.27 1.27)) )) (number "2" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -10.16 180) (length 5.08) (name "COM" (effects (font (size 1.27 1.27)) )) (number "3" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -15.24 180) (length 5.08) (name "+5V_RAW" (effects (font (size 1.27 1.27)) )) (number "4" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -20.32 180) (length 5.08) (name "COM" (effects (font (size 1.27 1.27)) )) (number "5" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -25.4 180) (length 5.08) (name "+5V_RAW" (effects (font (size 1.27 1.27)) )) (number "6" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -30.48 180) (length 5.08) (name "COM" (effects (font (size 1.27 1.27)) )) (number "7" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -35.56 180) (length 5.08) (name "PWR_OK" (effects (font (size 1.27 1.27)) )) (number "8" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -40.64 180) (length 5.08) (name "+5VSB_RAW" (effects (font (size 1.27 1.27)) )) (number "9" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -45.72 180) (length 5.08) (name "+12V_RAW" (effects (font (size 1.27 1.27)) )) (number "10" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -50.8 180) (length 5.08) (name "+12V_RAW" (effects (font (size 1.27 1.27)) )) (number "11" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -55.88 180) (length 5.08) (name "+3V3_RAW" (effects (font (size 1.27 1.27)) )) (number "12" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -60.96 180) (length 5.08) (name "+3V3_RAW" (effects (font (size 1.27 1.27)) )) (number "13" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -66.04 180) (length 5.08) (name "-12V_RAW" (effects (font (size 1.27 1.27)) )) (number "14" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -71.12 180) (length 5.08) (name "COM" (effects (font (size 1.27 1.27)) )) (number "15" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -76.2 180) (length 5.08) (name "PS_ON_N" (effects (font (size 1.27 1.27)) )) (number "16" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -81.28 180) (length 5.08) (name "COM" (effects (font (size 1.27 1.27)) )) (number "17" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -86.36 180) (length 5.08) (name "COM" (effects (font (size 1.27 1.27)) )) (number "18" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -91.44 180) (length 5.08) (name "COM" (effects (font (size 1.27 1.27)) )) (number "19" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -96.52 180) (length 5.08) (name "RESERVED" (effects (font (size 1.27 1.27)) )) (number "20" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -101.6 180) (length 5.08) (name "+5V_RAW" (effects (font (size 1.27 1.27)) )) (number "21" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -106.68 180) (length 5.08) (name "+5V_RAW" (effects (font (size 1.27 1.27)) )) (number "22" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -111.76 180) (length 5.08) (name "+5V_RAW" (effects (font (size 1.27 1.27)) )) (number "23" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 25.4 -116.84 180) (length 5.08) (name "COM" (effects (font (size 1.27 1.27)) )) (number "24" (effects (font (size 1.0 1.0)) ))))))
-(text "DIY ATX BENCH POWER SUPPLY | REV 1.5" (at 15.24 13.97 0) (effects (font (size 2.0 2.0)) (justify left top)) (uuid 688cc2fa-d27e-5c0b-90a6-ce2fcabf0f43))
-(text "Project 1 - Electronics Circuits Laboratory" (at 15.24 21.59 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid 774cd699-fc15-5d9b-a66c-261bcab4096f))
-(text "A. ATX SUPPLY SIGNALS" (at 15.24 27.94 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid aa7bd227-6cd1-5a73-85e2-03fbdfaabb7f))
-(symbol (lib_id "Project:ATX24_LOGICAL") (at 38.1 45.72 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid ee6112ed-f72e-5e0b-9bbe-4a278900297e)
-    (property "Reference" "J1" (at 38.1 38.1 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "ATX SIGNAL MAP ONLY" (at 38.1 53.339999999999996 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "J1") (unit 1)))))
-(wire (pts (xy 63.5000 45.7200) (xy 81.2800 45.7200)) (stroke (width 0) (type default)) (uuid e3a929e5-f074-5c07-befc-4ab0e43fbd88))
-(label "+3V3_RAW" (at 81.2800 45.7200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 62386c5d-1c3d-5e3f-9572-bbe9d35093f4))
-(wire (pts (xy 63.5000 50.8000) (xy 81.2800 50.8000)) (stroke (width 0) (type default)) (uuid 12f895f4-b5a2-5adf-99ee-c81d3ee6d060))
-(label "+3V3_RAW" (at 81.2800 50.8000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid bff4ca75-8033-5d12-a891-bf60de2a2434))
-(wire (pts (xy 63.5000 55.8800) (xy 81.2800 55.8800)) (stroke (width 0) (type default)) (uuid b3dea251-0e6d-5be1-8d70-16a60a3c85cf))
-(label "COM" (at 81.2800 55.8800 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 6ce911fe-977a-5c50-af2b-06a2cd77fc85))
-(wire (pts (xy 63.5000 60.9600) (xy 81.2800 60.9600)) (stroke (width 0) (type default)) (uuid dbecafae-7b16-5eb5-a862-c3fbb6f0ee06))
-(label "+5V_RAW" (at 81.2800 60.9600 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 5af55eb8-66f8-5512-8463-040573c15c38))
-(wire (pts (xy 63.5000 66.0400) (xy 81.2800 66.0400)) (stroke (width 0) (type default)) (uuid d4bdbe61-edf8-5a79-b16a-6c439387e2c6))
-(label "COM" (at 81.2800 66.0400 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid afa5bdab-db3d-5d65-a5b7-f08692df25d5))
-(wire (pts (xy 63.5000 71.1200) (xy 81.2800 71.1200)) (stroke (width 0) (type default)) (uuid 5703c322-6f29-5c3a-b50e-b512065975ad))
-(label "+5V_RAW" (at 81.2800 71.1200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 4ea0478f-8be6-57c4-98db-2de8ae69f6c5))
-(wire (pts (xy 63.5000 76.2000) (xy 81.2800 76.2000)) (stroke (width 0) (type default)) (uuid e9137e64-f3fb-5e38-9a88-2c5daaa27639))
-(label "COM" (at 81.2800 76.2000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid cb73e3ea-d566-5dc5-9edb-e655b3548f8d))
-(wire (pts (xy 63.5000 81.2800) (xy 81.2800 81.2800)) (stroke (width 0) (type default)) (uuid b8ce76a6-d666-56ee-9374-debdf30407bc))
-(label "PWR_OK" (at 81.2800 81.2800 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid dded9897-218e-5911-b855-76155d86a3e5))
-(wire (pts (xy 63.5000 86.3600) (xy 81.2800 86.3600)) (stroke (width 0) (type default)) (uuid aa4bf4bd-16af-5eea-99de-0d8fe67044dc))
-(label "+5VSB_RAW" (at 81.2800 86.3600 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 202e7f06-b349-568d-b55c-a94305864c6b))
-(wire (pts (xy 63.5000 91.4400) (xy 81.2800 91.4400)) (stroke (width 0) (type default)) (uuid 7cb5362a-bce9-5d82-b7ed-114d0db62bc2))
-(label "+12V_RAW" (at 81.2800 91.4400 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 7a0d833f-25a7-50ba-8b05-3ed47bc4a119))
-(wire (pts (xy 63.5000 96.5200) (xy 81.2800 96.5200)) (stroke (width 0) (type default)) (uuid ab757ae1-d4f9-5be2-be2d-d9d8e3ba0562))
-(label "+12V_RAW" (at 81.2800 96.5200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 1b6ab5ff-82aa-5503-aae5-4aacfea1171a))
-(wire (pts (xy 63.5000 101.6000) (xy 81.2800 101.6000)) (stroke (width 0) (type default)) (uuid 4fcdd542-c058-5819-ba06-c7c7a87f4879))
-(label "+3V3_RAW" (at 81.2800 101.6000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 20d0e635-f1b9-50ca-a659-375777d8c14f))
-(wire (pts (xy 63.5000 106.6800) (xy 81.2800 106.6800)) (stroke (width 0) (type default)) (uuid d662cc00-da0b-58d9-8ddf-a984814eb633))
-(label "+3V3_RAW" (at 81.2800 106.6800 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid c314f94b-b2f7-5bf7-8072-593b266af389))
-(no_connect (at 63.5 111.76) (uuid 122f6e5d-2d35-5ea1-9fdb-23df048f8810))
-(wire (pts (xy 63.5000 116.8400) (xy 81.2800 116.8400)) (stroke (width 0) (type default)) (uuid 7462930f-5838-5a05-9736-4fbcab7f293b))
-(label "COM" (at 81.2800 116.8400 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid e93c782a-0d76-50d2-aaef-60dcd8b6e302))
-(wire (pts (xy 63.5000 121.9200) (xy 81.2800 121.9200)) (stroke (width 0) (type default)) (uuid 0bfe9b6f-60d4-57eb-b8ef-b8d6ce27a33f))
-(label "PS_ON_N" (at 81.2800 121.9200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 911b65f1-1cb1-55b3-80aa-737838a36afb))
-(wire (pts (xy 63.5000 127.0000) (xy 81.2800 127.0000)) (stroke (width 0) (type default)) (uuid c74bdc8e-4dc8-5410-b889-47d4fa5670b2))
-(label "COM" (at 81.2800 127.0000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid b59243e1-847f-51fa-b1f9-45985591ea05))
-(wire (pts (xy 63.5000 132.0800) (xy 81.2800 132.0800)) (stroke (width 0) (type default)) (uuid 38affb3e-bc1c-54fe-bb17-b7ff0e4e35d1))
-(label "COM" (at 81.2800 132.0800 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 4fe01134-457c-5982-a43d-5af67b8a1ce3))
-(wire (pts (xy 63.5000 137.1600) (xy 81.2800 137.1600)) (stroke (width 0) (type default)) (uuid cb18de43-cd7e-5708-9752-813fd93b9e01))
-(label "COM" (at 81.2800 137.1600 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 2fe7cfc8-7b7e-5554-a0b3-7cd3f1470795))
-(no_connect (at 63.5 142.24) (uuid 7c77186f-f1c2-5c36-9898-7db26e2cfad7))
-(wire (pts (xy 63.5000 147.3200) (xy 81.2800 147.3200)) (stroke (width 0) (type default)) (uuid 0fe74c4c-1e0b-57c2-9451-ad8611d01a11))
-(label "+5V_RAW" (at 81.2800 147.3200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid e6487ebd-ecad-5d64-ad39-3484954aebfc))
-(wire (pts (xy 63.5000 152.4000) (xy 81.2800 152.4000)) (stroke (width 0) (type default)) (uuid 87d7ce1f-9863-5245-abd1-fcc7ea086085))
-(label "+5V_RAW" (at 81.2800 152.4000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 4242241b-c33c-57c1-99f4-3ef0bb242b64))
-(wire (pts (xy 63.5000 157.4800) (xy 81.2800 157.4800)) (stroke (width 0) (type default)) (uuid bb0af475-a748-5815-a3a3-da47caea5747))
-(label "+5V_RAW" (at 81.2800 157.4800 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid c4b1ad25-89b9-5e97-9ac7-23250711f39e))
-(wire (pts (xy 63.5000 162.5600) (xy 81.2800 162.5600)) (stroke (width 0) (type default)) (uuid 0573348f-0633-5064-8afd-d3ac6544b859))
-(label "COM" (at 81.2800 162.5600 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 367a252e-db47-596a-b176-5bae3653e81b))
-(text "PSU1: PLENTY COMPUTER ATX500WS.\nPin numbers: standard 24-pin ATX signal reference.\nCOM is the common supply return." (at 15.24 175.26 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid d2341a2f-9332-5f93-b797-7b38bc5cdb57))
-(symbol (lib_id "Project:Post") (at 91.44 195.58 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 3aca59ba-b609-5bf0-85bd-2c810202e354)
-    (property "Reference" "TP1" (at 91.44 187.96 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "PWR_OK TEST" (at 91.44 203.20000000000002 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "TP1") (unit 1)))))
-(wire (pts (xy 71.1200 195.5800) (xy 86.3600 195.5800)) (stroke (width 0) (type default)) (uuid ea811686-f34d-5e61-a401-8cf1b8c981dc))
-(label "PWR_OK" (at 71.1200 195.5800 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 542a3a8b-809a-5c0d-97c7-57a095f05c85))
-(text "B. FIXED OUTPUTS / SEPARATE FUSES" (at 111.76 27.94 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid 76dd6a5f-0410-5bdc-a4ef-cd4bdb03a734))
-(symbol (lib_id "Project:Fuse") (at 149.86 45.72 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 2eb1d831-7746-592d-97dd-865b6e46550e)
-    (property "Reference" "F1" (at 149.86 38.1 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "Fuse" (at 149.86 53.339999999999996 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "F1") (unit 1)))))
-(wire (pts (xy 121.9200 45.7200) (xy 142.2400 45.7200)) (stroke (width 0) (type default)) (uuid 3903abcd-d0f8-5936-818f-73e7929c51ee))
-(label "+12V_RAW" (at 121.9200 45.7200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid b66ccfc9-89a2-5ad7-9092-4edc70523c05))
-(wire (pts (xy 157.4800 45.7200) (xy 177.8000 45.7200)) (stroke (width 0) (type default)) (uuid 8124523b-b6ce-5fba-9d1b-30217e7e4ac9))
-(label "+12V_POST" (at 177.8000 45.7200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid cdb5ec13-e00b-577a-a601-9f53f9e58517))
-(symbol (lib_id "Project:Post") (at 226.06 45.72 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid f4fd1458-26b3-5e5d-a2cf-024bbff97e7c)
-    (property "Reference" "J2" (at 226.06 38.1 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "RED +12V" (at 226.06 53.339999999999996 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "J2") (unit 1)))))
-(wire (pts (xy 205.7400 45.7200) (xy 220.9800 45.7200)) (stroke (width 0) (type default)) (uuid 7468cc30-8ab2-578e-b879-84281b15a772))
-(label "+12V_POST" (at 205.7400 45.7200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid d3a74851-76a3-5788-aac8-5adcf1cc8ed0))
-(symbol (lib_id "Project:Fuse") (at 149.86 71.12 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid eeff56fb-4d2b-5481-9733-042e56069845)
-    (property "Reference" "F2" (at 149.86 63.50000000000001 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "Fuse" (at 149.86 78.74000000000001 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "F2") (unit 1)))))
-(wire (pts (xy 121.9200 71.1200) (xy 142.2400 71.1200)) (stroke (width 0) (type default)) (uuid 550b6c3e-9536-5387-9caa-d17a39889060))
-(label "+5V_RAW" (at 121.9200 71.1200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 0fe28e1e-e86a-5665-a91a-fb22306bad70))
-(wire (pts (xy 157.4800 71.1200) (xy 177.8000 71.1200)) (stroke (width 0) (type default)) (uuid fc24a379-9d30-5c1e-a61e-4fd0b655d419))
-(label "+5V_POST" (at 177.8000 71.1200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 0cea48c2-19c2-559e-8536-d2376edbc03e))
-(symbol (lib_id "Project:Post") (at 226.06 71.12 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid cae385f4-006d-5ecf-9fd9-52a4a4c6f160)
-    (property "Reference" "J3" (at 226.06 63.50000000000001 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "YELLOW +5V" (at 226.06 78.74000000000001 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "J3") (unit 1)))))
-(wire (pts (xy 205.7400 71.1200) (xy 220.9800 71.1200)) (stroke (width 0) (type default)) (uuid 12b4d437-bb14-5caf-b046-744b3329e971))
-(label "+5V_POST" (at 205.7400 71.1200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 313799b6-c331-56bf-b1eb-1acfb02c91d6))
-(symbol (lib_id "Project:Fuse") (at 149.86 96.52 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 03825eb4-1b43-560d-a048-7199a4c96853)
-    (property "Reference" "F3" (at 149.86 88.89999999999999 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "Fuse" (at 149.86 104.14 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "F3") (unit 1)))))
-(wire (pts (xy 121.9200 96.5200) (xy 142.2400 96.5200)) (stroke (width 0) (type default)) (uuid 261c0aa3-c77f-5b68-80de-7dcd51724ea3))
-(label "+3V3_RAW" (at 121.9200 96.5200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 81588d1d-2263-55e5-bb92-f1854f743b0c))
-(wire (pts (xy 157.4800 96.5200) (xy 177.8000 96.5200)) (stroke (width 0) (type default)) (uuid 5d75749f-04aa-567c-b38d-50731b350680))
-(label "+3V3_POST" (at 177.8000 96.5200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 75c56461-e2cf-5611-aca1-6e37f0586141))
-(symbol (lib_id "Project:Post") (at 226.06 96.52 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 47719b37-ede9-55e5-bb46-fea2bddaade8)
-    (property "Reference" "J4" (at 226.06 88.89999999999999 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "GREEN +3.3V" (at 226.06 104.14 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "J4") (unit 1)))))
-(wire (pts (xy 205.7400 96.5200) (xy 220.9800 96.5200)) (stroke (width 0) (type default)) (uuid 122de697-0061-5a7a-9684-09006f04e706))
-(label "+3V3_POST" (at 205.7400 96.5200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid eeab8610-c2fc-5f04-98b1-00abed41a0f9))
-(symbol (lib_id "Project:Post") (at 226.06 147.32 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 16073235-f9cb-5ad3-ac04-5a9ce083c224)
-    (property "Reference" "J5" (at 226.06 139.7 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "BLACK COM" (at 226.06 154.94 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "J5") (unit 1)))))
-(wire (pts (xy 205.7400 147.3200) (xy 220.9800 147.3200)) (stroke (width 0) (type default)) (uuid fa8e5996-faa9-506d-b0c7-a942e1403d0d))
-(label "COM" (at 205.7400 147.3200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 07cc22e8-fed3-5d8b-9a23-e7570d8ee0bd))
-(text "F1: 12 V output    F2: 5 V output    F3: 3.3 V output\nFixed outputs share the COM terminal." (at 111.76 162.56 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid 2a36e327-da88-50df-b679-dc4104e4cec5))
-(text "C. SOCKET, STRIP AND FAN" (at 259.08 27.94 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid 340fd984-a4ff-5d26-87a5-82c3415dcbdd))
-(symbol (lib_id "Project:Load2") (at 373.38 48.26 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 40d1b230-746e-560c-a8c8-d74a000bf1b3)
-    (property "Reference" "J8" (at 373.38 40.64 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "12V CIG. SOCKET" (at 373.38 55.879999999999995 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "J8") (unit 1)))))
-(wire (pts (xy 292.1000 45.7200) (xy 360.6800 45.7200)) (stroke (width 0) (type default)) (uuid 415ede83-2463-5525-89a9-9ef219f926bf))
-(label "+12V_RAW" (at 292.1000 45.7200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 646b5e64-f725-5ed0-9cb9-021b8dc70175))
-(wire (pts (xy 337.8200 50.8000) (xy 360.6800 50.8000)) (stroke (width 0) (type default)) (uuid b6cacaa0-627a-56e6-8570-88d8904f475a))
-(label "COM" (at 337.8200 50.8000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 78f6e8ac-7d61-52c8-be77-e955acb2cfc5))
-(symbol (lib_id "Project:Load2") (at 373.38 88.9 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 843d758b-0d17-58de-8562-71e48c0847df)
-    (property "Reference" "J9" (at 373.38 81.28 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "5V LED STRIP" (at 373.38 96.52000000000001 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "J9") (unit 1)))))
-(wire (pts (xy 292.1000 86.3600) (xy 360.6800 86.3600)) (stroke (width 0) (type default)) (uuid 4f89d855-3119-5662-82eb-a36a6b837ed3))
-(label "+5V_RAW" (at 292.1000 86.3600 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid ef8ec70d-2b55-5f62-8be1-6b5aea0b3be8))
-(wire (pts (xy 337.8200 91.4400) (xy 360.6800 91.4400)) (stroke (width 0) (type default)) (uuid 5d473ce9-849f-5c27-bc39-8689818cb109))
-(label "COM" (at 337.8200 91.4400 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 705fe414-83a2-521e-a81f-f9f53f5189d4))
-(symbol (lib_id "Project:FanAssembly") (at 373.38 129.54 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 94527d29-d210-5604-ac2c-3a30e7ec0153)
-    (property "Reference" "M1" (at 373.38 121.91999999999999 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "ORIGINAL PSU FAN" (at 373.38 137.16 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "M1") (unit 1)))))
-(text "J8: 12 V panel-mount cigarette-lighter power socket.\nCentre contact: +12 V. Outer contact: COM.\nJ9: 5 V LED strip, direct PSU output supply.\nM1: original fan circuit inside PSU1." (at 259.08 149.86 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid 63bfd418-bd5b-5120-99bc-69e818007c29))
-(text "D. ADJUSTABLE OUTPUT / SEPARATE RETURN" (at 111.76 185.42 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid b1f2940d-4817-546e-9c50-e0063dd17296))
-(symbol (lib_id "Project:ZK4KX") (at 213.36 210.82 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid d531ab69-2931-5afb-a7d3-7955d28145ce)
-    (property "Reference" "U1" (at 213.36 203.2 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "ZK-4KX MODULE" (at 213.36 218.44 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "U1") (unit 1)))))
-(wire (pts (xy 149.8600 205.7400) (xy 193.0400 205.7400)) (stroke (width 0) (type default)) (uuid c0f4ae84-6cf1-5935-82d2-84754f472537))
-(label "+12V_RAW" (at 149.8600 205.7400 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 6721758b-af79-5f2e-be0d-991097f38f20))
-(wire (pts (xy 180.3400 215.9000) (xy 193.0400 215.9000)) (stroke (width 0) (type default)) (uuid 2845e665-3f6d-5144-ad02-4603b342e049))
-(label "COM" (at 180.3400 215.9000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 50c44d89-562d-5315-b9d7-3531e0d1ada2))
-(wire (pts (xy 233.6800 205.7400) (xy 248.9200 205.7400)) (stroke (width 0) (type default)) (uuid 3e26450c-b8f3-5fdd-bc0c-d3bb1afeb0bb))
-(label "ADJ_CONV_POS" (at 248.9200 205.7400 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 48b4c962-05b3-519a-8fe5-95990a53330a))
-(wire (pts (xy 233.6800 215.9000) (xy 248.9200 215.9000)) (stroke (width 0) (type default)) (uuid dacd4a65-5836-5ddc-b504-5ed84ec4cdcf))
-(label "ADJ_NEG" (at 248.9200 215.9000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 389548aa-d09b-510d-aafd-4d29bf800a15))
-(symbol (lib_id "Project:Fuse") (at 266.7 200.66 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 27b364b2-8e4a-5fdf-bb9d-32cc0fdad418)
-    (property "Reference" "F4" (at 266.7 193.04 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "Fuse" (at 266.7 208.28 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "F4") (unit 1)))))
-(wire (pts (xy 241.3000 200.6600) (xy 259.0800 200.6600)) (stroke (width 0) (type default)) (uuid f2b0610e-679e-56a6-b64b-d4b63bcae49b))
-(label "ADJ_CONV_POS" (at 241.3000 200.6600 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid f31612af-6671-55bf-8940-5ce71ac79da3))
-(symbol (lib_id "Project:Post") (at 294.64 200.66 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 5e36427e-d610-5387-98ee-49522e36f253)
-    (property "Reference" "J6" (at 294.64 193.04 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "ADJ +" (at 294.64 208.28 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "J6") (unit 1)))))
-(wire (pts (xy 274.3200 200.6600) (xy 289.5600 200.6600)) (stroke (width 0) (type default)) (uuid e2ff0928-09fe-59f6-8e1e-0058918a94e1))
-(label "ADJ_POS" (at 289.5600 200.6600 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 7e9e6741-be83-56d3-8d32-2788e2d416f4))
-(symbol (lib_id "Project:Post") (at 284.48 226.06 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid af8c836b-d61d-574a-8a21-f6916e59efa4)
-    (property "Reference" "J7" (at 284.48 218.44 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "ADJ - / NOT COM" (at 284.48 233.68 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "J7") (unit 1)))))
-(wire (pts (xy 264.1600 226.0600) (xy 279.4000 226.0600)) (stroke (width 0) (type default)) (uuid fe2ee1b8-2f68-58c6-aa4c-7c41f50234ab))
-(label "ADJ_NEG" (at 264.1600 226.0600 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 939bdfa8-3c12-5cf3-a4ca-9f2625bf8a06))
-(text "U1: ZK-4KX buck-boost module.\nLoad return connects to OUT-.\nSeparate return; non-isolated output." (at 111.76 238.76 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid 0c8521e0-92cc-590d-849a-cbc6aaea0a99))
-(text "E. MAIN SWITCH" (at 15.24 205.74 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid 0ff291f0-7b8c-5532-96ad-f20bd0c9a401))
-(symbol (lib_id "Project:Switch") (at 53.34 223.52 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid b75e50b4-e209-5b8e-afda-521c43160e14)
-    (property "Reference" "SW1" (at 53.34 215.9 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "MAINTAINED PS_ON" (at 53.34 231.14000000000001 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "SW1") (unit 1)))))
-(wire (pts (xy 22.8600 223.5200) (xy 45.7200 223.5200)) (stroke (width 0) (type default)) (uuid d6085df2-2fa8-5fa2-a1d4-05730f1cca38))
-(label "PS_ON_N" (at 22.8600 223.5200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid d23bcd99-9d74-510b-bda8-3918596c1875))
-(wire (pts (xy 60.9600 223.5200) (xy 83.8200 223.5200)) (stroke (width 0) (type default)) (uuid 88ea746e-7a30-5825-835e-5c54daa0ce00))
-(label "COM" (at 83.8200 223.5200 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 0c42dbf0-8084-50f3-af75-927a9044f371))
-(text "SW1 closed: main outputs ON.\nSW1 open: main outputs OFF.\nStandby supply remains active while AC is connected." (at 15.24 241.3 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid 352d5853-4ea9-59d7-9fb2-01d7e6c0281e))
-(text "F. STANDBY AND MAIN INDICATORS" (at 307.34 175.26 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid b069d8ac-d081-59fb-8245-23ecb683df85))
-(text "D1: green, purple +5VSB wire.\nD2: red, gray PWR_OK wire." (at 307.34 195.58 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid 9b0171a1-cef8-5bc8-ab44-25956aa0d5ef))
-(symbol (lib_id "Project:R") (at 325.12 218.44 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid d98467ac-9049-5621-8640-49b0acc4afd2)
-    (property "Reference" "R1" (at 325.12 210.82 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "1k" (at 325.12 226.06 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "R1") (unit 1)))))
-(symbol (lib_id "Project:LED") (at 375.92 218.44 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 9c94323d-648d-5e64-8647-8eaab12954c6)
-    (property "Reference" "D1" (at 375.92 210.82 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "GREEN / SB" (at 375.92 226.06 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "D1") (unit 1)))))
-(wire (pts (xy 302.2600 218.4400) (xy 317.5000 218.4400)) (stroke (width 0) (type default)) (uuid e382473e-74bb-50b6-8e6e-2d2dec79e22f))
-(label "+5VSB_RAW" (at 302.2600 218.4400 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid c2ac4d02-e43c-5c75-bfae-cc78e2bd0db1))
-(wire (pts (xy 332.7400 218.4400) (xy 368.3000 218.4400)) (stroke (width 0) (type default)) (uuid 6b667d16-f8e1-5549-8b68-6adf7b07ab66))
-(wire (pts (xy 383.5400 218.4400) (xy 396.2400 218.4400)) (stroke (width 0) (type default)) (uuid ab7828c6-cb75-5ceb-a92e-2e644c12f7db))
-(label "COM" (at 396.2400 218.4400 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid e94bd884-8c16-5dbc-883c-494131b952e8))
-(symbol (lib_id "Project:R") (at 325.12 241.3 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid fc578892-99f3-508f-9d94-91c4bd23626f)
-    (property "Reference" "R2" (at 325.12 233.68 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "1k" (at 325.12 248.92000000000002 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "R2") (unit 1)))))
-(symbol (lib_id "Project:LED") (at 375.92 241.3 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 2417c7e0-cf8d-5c92-85a2-00478b01b677)
-    (property "Reference" "D2" (at 375.92 233.68 0) (effects (font (size 1.0 1.0)) ))
-    (property "Value" "RED / PWR_OK" (at 375.92 248.92000000000002 0) (effects (font (size 1.0 1.0)) ))
-    (instances (project "diy_atx_psu" (path "/05a69ad3-73a0-5976-b3df-662b12134f20" (reference "D2") (unit 1)))))
-(wire (pts (xy 302.2600 241.3000) (xy 317.5000 241.3000)) (stroke (width 0) (type default)) (uuid 74c17472-9464-5c5a-8187-f8439452e789))
-(label "PWR_OK" (at 302.2600 241.3000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 9f585a3d-7fd7-526b-8579-bab3ba92fb31))
-(wire (pts (xy 332.7400 241.3000) (xy 368.3000 241.3000)) (stroke (width 0) (type default)) (uuid f745d254-b2d3-5bc3-91c7-8320dc2dbaf0))
-(wire (pts (xy 383.5400 241.3000) (xy 396.2400 241.3000)) (stroke (width 0) (type default)) (uuid fa920cf3-93c6-5c2f-a07d-d7033e200fa2))
-(label "COM" (at 396.2400 241.3000 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid 738e80c0-a9b2-5a55-aa68-49bd577f847b))
-(text "Green indicates standby power; red follows PWR_OK.\nSignal loading and fuse selection: see report calculations." (at 111.76 264.16 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid 65ead984-b32e-53b5-897e-40590ceb2fb9))
-(embedded_fonts no))
+(kicad_sch (version 20260306) (generator "eeschema") (generator_version "10.0") (uuid bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03) (paper "A3") (title_block (title "ATX Bench Power Supply") (date "2026-10-02") (rev "2.0")) (lib_symbols (symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:Fuse"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "F"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse"
+			(at -1.905 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "fuse"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "*Fuse*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Fuse_0_1"
+			(rectangle
+				(start -0.762 -2.54)
+				(end 0.762 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Fuse_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:LED"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "LED diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "LED_0_1"
+			(polyline
+				(pts
+					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "LED_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Switch:SW_SPST"
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "SW"
+			(at 0 3.175 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "switch lever"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SW_SPST_0_0"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.524 0.254) (xy 1.524 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SW_SPST_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Project:ATX_PSU" (pin_numbers (hide yes)) (pin_names (offset 1.016)) (in_bom yes) (on_board no) (property "Reference" "J" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (property "Value" "ATX_PSU" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (symbol "ATX_PSU_0_1" (rectangle (start -30.48 63.5) (end 30.48 -93.98) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "ATX_PSU_1_1" (pin passive line (at 38.1 50.8 180) (length 7.62) (name "+12 V" (effects (font (size 1.8 1.8)) )) (number "10" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 50.8 180) (length 7.62) (hide yes) (name "+12 V" (effects (font (size 1.8 1.8)) )) (number "11" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 25.4 180) (length 7.62) (name "+5 V" (effects (font (size 1.8 1.8)) )) (number "4" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 25.4 180) (length 7.62) (hide yes) (name "+5 V" (effects (font (size 1.8 1.8)) )) (number "6" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 25.4 180) (length 7.62) (hide yes) (name "+5 V" (effects (font (size 1.8 1.8)) )) (number "21" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 25.4 180) (length 7.62) (hide yes) (name "+5 V" (effects (font (size 1.8 1.8)) )) (number "22" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 25.4 180) (length 7.62) (hide yes) (name "+5 V" (effects (font (size 1.8 1.8)) )) (number "23" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 0.0 180) (length 7.62) (name "+3.3 V" (effects (font (size 1.8 1.8)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 0.0 180) (length 7.62) (hide yes) (name "+3.3 V" (effects (font (size 1.8 1.8)) )) (number "2" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 0.0 180) (length 7.62) (hide yes) (name "+3.3 V" (effects (font (size 1.8 1.8)) )) (number "12" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 0.0 180) (length 7.62) (hide yes) (name "+3.3 V" (effects (font (size 1.8 1.8)) )) (number "13" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 -50.8 180) (length 7.62) (name "+5VSB" (effects (font (size 1.8 1.8)) )) (number "9" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 38.1 -76.2 180) (length 7.62) (name "PWR_OK" (effects (font (size 1.8 1.8)) )) (number "8" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0.0 -101.6 90) (length 7.62) (name "COM" (effects (font (size 1.8 1.8)) )) (number "3" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0.0 -101.6 90) (length 7.62) (hide yes) (name "COM" (effects (font (size 1.8 1.8)) )) (number "5" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0.0 -101.6 90) (length 7.62) (hide yes) (name "COM" (effects (font (size 1.8 1.8)) )) (number "7" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0.0 -101.6 90) (length 7.62) (hide yes) (name "COM" (effects (font (size 1.8 1.8)) )) (number "15" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0.0 -101.6 90) (length 7.62) (hide yes) (name "COM" (effects (font (size 1.8 1.8)) )) (number "17" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0.0 -101.6 90) (length 7.62) (hide yes) (name "COM" (effects (font (size 1.8 1.8)) )) (number "18" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0.0 -101.6 90) (length 7.62) (hide yes) (name "COM" (effects (font (size 1.8 1.8)) )) (number "19" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0.0 -101.6 90) (length 7.62) (hide yes) (name "COM" (effects (font (size 1.8 1.8)) )) (number "24" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -38.1 -76.2 0) (length 7.62) (name "PS_ON#" (effects (font (size 1.8 1.8)) )) (number "16" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -38.1 50.8 0) (length 7.62) (name "-12 V" (effects (font (size 1.8 1.8)) )) (number "14" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -38.1 25.4 0) (length 7.62) (name "NC" (effects (font (size 1.8 1.8)) )) (number "20" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:Post" (pin_numbers (hide yes)) (pin_names (offset 1.016)) (in_bom yes) (on_board no) (property "Reference" "J" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (property "Value" "Post" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (symbol "Post_0_1" (circle (center 0.0 0.0) (radius 1.397) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Post_1_1" (pin passive line (at -5.08 0.0 0) (length 3.683) (name "" (effects (font (size 1.8 1.8)) )) (number "1" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:ZK4KX" (pin_numbers (hide yes)) (pin_names (offset 1.016)) (in_bom yes) (on_board no) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (property "Value" "ZK4KX" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (symbol "ZK4KX_0_1" (rectangle (start -15.24 10.16) (end 15.24 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "ZK4KX_1_1" (pin passive line (at -20.32 5.08 0) (length 5.08) (name "IN+" (effects (font (size 1.8 1.8)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -20.32 -5.08 0) (length 5.08) (name "IN-" (effects (font (size 1.8 1.8)) )) (number "2" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 20.32 5.08 180) (length 5.08) (name "OUT+" (effects (font (size 1.8 1.8)) )) (number "3" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 20.32 -5.08 180) (length 5.08) (name "OUT-" (effects (font (size 1.8 1.8)) )) (number "4" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:Socket" (pin_numbers (hide yes)) (pin_names (offset 1.016)) (in_bom yes) (on_board no) (property "Reference" "J" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (property "Value" "Socket" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (symbol "Socket_0_1" (circle (center 0.0 0.0) (radius 6.35) (stroke (width 0.254) (type default)) (fill (type none)))(circle (center 0.0 0.0) (radius 1.397) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -5.08 2.54) (xy -1.27 2.54) (xy -1.27 0.0)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -5.08 -2.54) (xy -4.318 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Socket_1_1" (pin passive line (at -12.7 2.54 0) (length 7.62) (name "+" (effects (font (size 1.8 1.8)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -12.7 -2.54 0) (length 7.62) (name "-" (effects (font (size 1.8 1.8)) )) (number "2" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:LED_Strip" (pin_numbers (hide yes)) (pin_names (offset 1.016)) (in_bom yes) (on_board no) (property "Reference" "J" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (property "Value" "LED_Strip" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (symbol "LED_Strip_0_1" (rectangle (start -5.08 6.35) (end 15.24 -6.35) (stroke (width 0.254) (type default)) (fill (type background)))(polyline (pts (xy -1.27 -1.778) (xy -1.27 1.778) (xy 1.27 0.0) (xy -1.27 -1.778)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 1.27 -1.778) (xy 1.27 1.778)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 0.508 2.54) (xy 2.54 4.572) (xy 1.524 4.572)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 5.08 -1.778) (xy 5.08 1.778) (xy 7.62 0.0) (xy 5.08 -1.778)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 7.62 -1.778) (xy 7.62 1.778)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 6.858 2.54) (xy 8.89 4.572) (xy 7.874 4.572)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "LED_Strip_1_1" (pin passive line (at -12.7 2.54 0) (length 7.62) (name "+" (effects (font (size 1.8 1.8)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -12.7 -2.54 0) (length 7.62) (name "-" (effects (font (size 1.8 1.8)) )) (number "2" (effects (font (size 1.0 1.0)) ))))) (symbol "Project:InternalFan" (pin_numbers (hide yes)) (pin_names (offset 1.016)) (in_bom yes) (on_board no) (property "Reference" "M" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (property "Value" "InternalFan" (at 0 0 0) (effects (font (size 1.8 1.8)) )) (symbol "InternalFan_0_1" (circle (center 0.0 0.0) (radius 7.112) (stroke (width 0.254) (type default)) (fill (type none)))(circle (center 0.0 0.0) (radius 1.524) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 1.524 0.0) (xy 5.588 0.762) (xy 3.81 3.302) (xy 1.524 0.0)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -0.762 1.3208) (xy -3.4544 4.4577) (xy -4.765 1.6485) (xy -0.762 1.3208)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -0.762 -1.3208) (xy -2.1336 -5.2197) (xy 0.955 -4.9505) (xy -0.762 -1.3208)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "InternalFan_1_1" ))) (text "ATX BENCH POWER SUPPLY" (at 25.4 15.24 0) (effects (font (size 2.54 2.54)) (justify left top)) (uuid 9dde35a0-f076-5ae1-a25e-e691b752c4a0)) (text "External DC wiring" (at 25.4 25.4 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid 9dc5e3b7-7c21-5afe-bc5d-d36588115182)) (symbol (lib_id "Project:ATX_PSU") (at 63.5 96.52 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 24a288cd-cf06-5e9b-a334-ad92fee2aea7) (property "Reference" "J1" (at 63.5 38.1 0) (effects (font (size 1.8 1.8)) )) (property "Value" "PLENTY ATX500WS" (at 63.5 44.45 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "J1") (unit 1))))) (symbol (lib_id "Project:InternalFan") (at 63.5 109.22 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 5de4b22c-1525-54f2-a6ef-8e675f69f6dd) (property "Reference" "M1" (at 63.5 97.79 0) (effects (font (size 1.8 1.8)) )) (property "Value" "Internal PSU fan" (at 63.5 121.92 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "M1") (unit 1))))) (text "ATX supply" (at 43.18 132.08 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid 970b33e9-369c-5d7a-a674-9b119f29f94c)) (text "Standard signal pins" (at 38.1 139.7 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid ff11aac7-d049-5445-a47f-29b815a22d69)) (no_connect (at 25.4 45.72) (uuid 2160239c-7617-5e33-9c67-6a57c6390f0b)) (no_connect (at 25.4 71.12) (uuid 8a79ecba-6fa4-5b18-8143-a97ad32c6d8a)) (symbol (lib_id "Device:Fuse") (at 299.72 45.72 90) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 3ed0600e-ba1d-5a66-9b00-f5c3e12b4c2e) (property "Reference" "F1" (at 299.72 36.83 90) (effects (font (size 1.8 1.8)) )) (property "Value" "Fuse" (at 299.72 54.61 90) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "F1") (unit 1))))) (symbol (lib_id "Project:Post") (at 381.0 45.72 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid cc0daf05-2065-5716-b1ab-e489c1278f06) (property "Reference" "J2" (at 381.0 36.83 0) (effects (font (size 1.8 1.8)) )) (property "Value" "12 V / RED" (at 381.0 54.61 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "J2") (unit 1))))) (wire (pts (xy 101.6 45.72) (xy 127.0 45.72)) (stroke (width 0) (type default)) (uuid f5c5c8f5-57dd-5a94-b8f1-5ecf0e865587)) (wire (pts (xy 127.0 45.72) (xy 295.91 45.72)) (stroke (width 0) (type default)) (uuid 1d43e4ae-9bfc-57c6-afd3-d27fdb65181d)) (wire (pts (xy 303.53 45.72) (xy 375.92 45.72)) (stroke (width 0) (type default)) (uuid 71b7a667-6c3b-5007-92a8-5af84c25fd59)) (label "+12V" (at 106.68 45.72 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid 314ffc85-2aae-5418-b81e-88cc01315b7b)) (junction (at 127.0 45.72) (diameter 0) (color 0 0 0 0) (uuid 21279661-a8b9-5acd-9e51-7be55d0018bc)) (symbol (lib_id "Device:Fuse") (at 299.72 71.12 90) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 85fc571f-78a1-5cf9-a623-7983c8161a58) (property "Reference" "F2" (at 299.72 62.23 90) (effects (font (size 1.8 1.8)) )) (property "Value" "Fuse" (at 299.72 80.01 90) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "F2") (unit 1))))) (symbol (lib_id "Project:Post") (at 381.0 71.12 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 1560819d-4cea-590e-8061-3d3adaa5cdaf) (property "Reference" "J3" (at 381.0 62.23 0) (effects (font (size 1.8 1.8)) )) (property "Value" "5 V / YELLOW" (at 381.0 80.01 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "J3") (unit 1))))) (wire (pts (xy 101.6 71.12) (xy 142.24 71.12)) (stroke (width 0) (type default)) (uuid 24c4220b-efc0-5407-940b-c141a5c530d6)) (wire (pts (xy 142.24 71.12) (xy 295.91 71.12)) (stroke (width 0) (type default)) (uuid b659937f-ed5a-5ebc-8219-b655a978c529)) (wire (pts (xy 303.53 71.12) (xy 375.92 71.12)) (stroke (width 0) (type default)) (uuid d6195bee-4fd2-559d-bc62-2f3b9a9bc3a9)) (label "+5V" (at 106.68 71.12 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid 4b4c0fe5-9488-5245-84b1-602d8e8313c3)) (junction (at 142.24 71.12) (diameter 0) (color 0 0 0 0) (uuid c9618401-74b9-5c9f-b011-3cac8e6940a4)) (symbol (lib_id "Device:Fuse") (at 299.72 96.52 90) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid b8f6f0a0-8148-55a3-b1ad-964803c6bc41) (property "Reference" "F3" (at 299.72 87.63 90) (effects (font (size 1.8 1.8)) )) (property "Value" "Fuse" (at 299.72 105.41 90) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "F3") (unit 1))))) (symbol (lib_id "Project:Post") (at 381.0 96.52 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 3fd6f221-5c9f-5199-a3b9-2430174c41f4) (property "Reference" "J4" (at 381.0 87.63 0) (effects (font (size 1.8 1.8)) )) (property "Value" "3.3 V / GREEN" (at 381.0 105.41 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "J4") (unit 1))))) (wire (pts (xy 101.6 96.52) (xy 295.91 96.52)) (stroke (width 0) (type default)) (uuid b80f4232-cd42-5ed6-b6f4-ef3d52f5d919)) (wire (pts (xy 303.53 96.52) (xy 375.92 96.52)) (stroke (width 0) (type default)) (uuid f67a77b8-12eb-5130-8e39-aed752a13f5d)) (label "+3V3" (at 106.68 96.52 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid 703dd4b2-9961-565e-b7a4-620e0fa38faf)) (text "FIXED OUTPUTS" (at 335.28 25.4 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid 91e98941-9735-5083-a543-54540fb52b12)) (symbol (lib_id "Project:ZK4KX") (at 233.68 127.0 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 1e797eea-9fe5-5235-9743-d7d3c1dd7ab2) (property "Reference" "U1" (at 233.68 113.03 0) (effects (font (size 1.8 1.8)) )) (property "Value" "ZK-4KX" (at 233.68 144.78 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "U1") (unit 1))))) (wire (pts (xy 127.0 45.72) (xy 127.0 121.92)) (stroke (width 0) (type default)) (uuid 38e4173f-9266-51a5-87fd-ea84b1d9c43d)) (wire (pts (xy 127.0 121.92) (xy 203.2 121.92)) (stroke (width 0) (type default)) (uuid d4fc29cc-2a46-5282-975c-bf9bd055ff1e)) (wire (pts (xy 203.2 121.92) (xy 213.36 121.92)) (stroke (width 0) (type default)) (uuid c3ad382d-eaab-50d0-9801-bb63f7ae52e9)) (junction (at 203.2 121.92) (diameter 0) (color 0 0 0 0) (uuid f9ea3475-81ea-5bc3-8f0f-b792806d6932)) (wire (pts (xy 213.36 132.08) (xy 198.12 132.08)) (stroke (width 0) (type default)) (uuid d79c3d45-396d-5879-993b-ef1f9959cb14)) (wire (pts (xy 198.12 132.08) (xy 198.12 241.3)) (stroke (width 0) (type default)) (uuid c3f482ea-6abc-5c87-88a7-201e367e5f21)) (symbol (lib_id "Device:Fuse") (at 299.72 121.92 90) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid ef1d37f0-db6e-5c7c-a4fc-5fc6d3b7c49d) (property "Reference" "F4" (at 299.72 113.03 90) (effects (font (size 1.8 1.8)) )) (property "Value" "Fuse" (at 299.72 130.81 90) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "F4") (unit 1))))) (wire (pts (xy 254.0 121.92) (xy 295.91 121.92)) (stroke (width 0) (type default)) (uuid 8e52fdf1-9953-51b5-97eb-33e7e8ae3e77)) (wire (pts (xy 303.53 121.92) (xy 375.92 121.92)) (stroke (width 0) (type default)) (uuid 13ec7f1f-5d7b-5ef8-a3f6-49a6c1eaffcc)) (symbol (lib_id "Project:Post") (at 381.0 121.92 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 5e78d99c-555f-5ca0-b7da-017530d1c172) (property "Reference" "J6" (at 381.0 113.03 0) (effects (font (size 1.8 1.8)) )) (property "Value" "ADJ + / RED" (at 381.0 130.81 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "J6") (unit 1))))) (symbol (lib_id "Project:Post") (at 381.0 147.32 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid b9b322ca-3d1d-5aab-8af6-7679227cfbff) (property "Reference" "J7" (at 381.0 138.43 0) (effects (font (size 1.8 1.8)) )) (property "Value" "ADJ - / BLACK" (at 381.0 156.21 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "J7") (unit 1))))) (wire (pts (xy 254.0 132.08) (xy 279.4 132.08)) (stroke (width 0) (type default)) (uuid 7f6f20e2-3520-5c3c-9b3f-5f6169f77da4)) (wire (pts (xy 279.4 132.08) (xy 279.4 147.32)) (stroke (width 0) (type default)) (uuid 09774722-1a27-5dfc-82bb-678356953d07)) (wire (pts (xy 279.4 147.32) (xy 375.92 147.32)) (stroke (width 0) (type default)) (uuid 6fbb5d29-b7d6-594e-86b9-22c4a4421e66)) (text "ADJUSTABLE OUTPUT" (at 335.28 106.68 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid e22e7973-9841-5da6-8f40-d289e069a7e6)) (symbol (lib_id "Device:R") (at 152.4 147.32 90) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 2a6787bd-bb1a-5a0e-9b7a-df7fead2d88a) (property "Reference" "R1" (at 152.4 138.43 90) (effects (font (size 1.8 1.8)) )) (property "Value" "1k" (at 152.4 156.21 90) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "R1") (unit 1))))) (symbol (lib_id "Device:LED") (at 177.8 147.32 180) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid a7c1a390-988f-54ea-8a20-1b0e29387076) (property "Reference" "D1" (at 177.8 137.16 0) (effects (font (size 1.8 1.8)) )) (property "Value" "GREEN / STANDBY" (at 170.18 157.48 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "D1") (unit 1))))) (wire (pts (xy 101.6 147.32) (xy 148.59 147.32)) (stroke (width 0) (type default)) (uuid 97c9b040-be0e-5e46-aa36-c8edb074975d)) (wire (pts (xy 156.21 147.32) (xy 173.99 147.32)) (stroke (width 0) (type default)) (uuid dab3237d-905f-590a-9e6a-77e969b5b7a1)) (wire (pts (xy 181.61 147.32) (xy 193.04 147.32)) (stroke (width 0) (type default)) (uuid e8d53cef-0440-5efa-91fb-abb157bc051c)) (wire (pts (xy 193.04 147.32) (xy 193.04 172.72)) (stroke (width 0) (type default)) (uuid ee369629-5c0d-5f92-b4f7-25790a2f77b5)) (wire (pts (xy 193.04 172.72) (xy 193.04 241.3)) (stroke (width 0) (type default)) (uuid 08da0ded-8c8a-5f4d-b9a8-66e0cf26ac43)) (label "+5VSB" (at 106.68 147.32 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid c3200909-d240-5a5b-a8cf-14736c4d5bc7)) (symbol (lib_id "Device:R") (at 152.4 172.72 90) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 76b0bc6d-6e2c-521f-bef2-7a311d6e1a6a) (property "Reference" "R2" (at 152.4 163.83 90) (effects (font (size 1.8 1.8)) )) (property "Value" "1k" (at 152.4 181.61 90) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "R2") (unit 1))))) (symbol (lib_id "Device:LED") (at 177.8 172.72 180) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 0e1f8ccf-1270-5a4b-bcce-5d55e465f679) (property "Reference" "D2" (at 177.8 162.56 0) (effects (font (size 1.8 1.8)) )) (property "Value" "RED / POWER GOOD" (at 170.18 182.88 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "D2") (unit 1))))) (wire (pts (xy 101.6 172.72) (xy 116.84 172.72)) (stroke (width 0) (type default)) (uuid 54136bea-5859-5a23-9140-d718be12eaed)) (wire (pts (xy 116.84 172.72) (xy 148.59 172.72)) (stroke (width 0) (type default)) (uuid 063d2fcc-dd01-5618-b6a9-5590cf15a4f8)) (wire (pts (xy 156.21 172.72) (xy 173.99 172.72)) (stroke (width 0) (type default)) (uuid 8bc6cb52-8fc8-5600-a642-3f2b8860b002)) (wire (pts (xy 181.61 172.72) (xy 193.04 172.72)) (stroke (width 0) (type default)) (uuid d85a0a77-14d9-5c62-bb3a-6237d0a1c8a6)) (junction (at 193.04 172.72) (diameter 0) (color 0 0 0 0) (uuid 01bef785-4ae3-5504-a63f-b336653d17aa)) (label "PWR_OK" (at 106.68 172.72 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid da5a8e73-1aad-5cc9-9f73-a625a9607128)) (symbol (lib_id "Project:Post") (at 121.92 193.04 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid b74cdcb7-4027-5c47-aa92-08f336a4b9f1) (property "Reference" "TP1" (at 121.92 185.42 0) (effects (font (size 1.8 1.8)) )) (property "Value" "PWR_OK" (at 121.92 200.66 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "TP1") (unit 1))))) (wire (pts (xy 116.84 172.72) (xy 116.84 193.04)) (stroke (width 0) (type default)) (uuid b5e0b23f-c026-5d29-b830-4a755d6af67e)) (junction (at 116.84 172.72) (diameter 0) (color 0 0 0 0) (uuid dd4c41f0-d3ed-5e13-8751-84bc2e19fa80)) (symbol (lib_id "Switch:SW_SPST") (at 25.4 215.9 270) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid e4bd5b1d-28f5-5c5e-81ee-0cc267b6f3a2) (property "Reference" "SW1" (at 43.18 210.82 90) (effects (font (size 1.8 1.8)) )) (property "Value" "MAIN ON/OFF" (at 50.8 218.44 90) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "SW1") (unit 1))))) (wire (pts (xy 25.4 172.72) (xy 15.24 172.72)) (stroke (width 0) (type default)) (uuid 23ca79ae-d55f-5e1b-98b9-e502aac08266)) (wire (pts (xy 15.24 172.72) (xy 15.24 210.82)) (stroke (width 0) (type default)) (uuid 42338bb4-f754-5484-ae38-2e697e4ad6e7)) (wire (pts (xy 15.24 210.82) (xy 25.4 210.82)) (stroke (width 0) (type default)) (uuid ebcc1fe0-156e-54c3-bbcb-1ac2946406d0)) (wire (pts (xy 25.4 220.98) (xy 25.4 241.3)) (stroke (width 0) (type default)) (uuid da996644-40e6-5e28-9cda-cf0438bae187)) (wire (pts (xy 25.4 241.3) (xy 63.5 241.3)) (stroke (width 0) (type default)) (uuid 1130fb55-4eb8-5abd-865c-a86860858511)) (symbol (lib_id "Project:Socket") (at 325.12 185.42 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 04157546-9e25-54ab-a368-abecc3946070) (property "Reference" "J8" (at 345.44 180.34 0) (effects (font (size 1.8 1.8)) )) (property "Value" "12 V CIG. SOCKET" (at 350.52 187.96 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "J8") (unit 1))))) (wire (pts (xy 203.2 121.92) (xy 203.2 182.88)) (stroke (width 0) (type default)) (uuid 4f8913ce-2ebb-541b-933c-482fd61dedfd)) (wire (pts (xy 203.2 182.88) (xy 312.42 182.88)) (stroke (width 0) (type default)) (uuid 243f3493-f719-5389-91b5-64280c265db3)) (wire (pts (xy 312.42 187.96) (xy 299.72 187.96)) (stroke (width 0) (type default)) (uuid cffe30c4-a506-5707-bc66-f19b862335cb)) (wire (pts (xy 299.72 187.96) (xy 299.72 218.44)) (stroke (width 0) (type default)) (uuid d57f8e25-1265-5e1c-8a1f-b3bd54177417)) (wire (pts (xy 299.72 218.44) (xy 299.72 241.3)) (stroke (width 0) (type default)) (uuid 0c40b719-7880-5cc7-9374-f08c2b462313)) (junction (at 299.72 218.44) (diameter 0) (color 0 0 0 0) (uuid 89deb035-55a1-5994-856e-80187e3f7fda)) (symbol (lib_id "Project:LED_Strip") (at 325.12 215.9 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid b1b7a6ec-924d-5869-becc-738ed9fc7b62) (property "Reference" "J9" (at 350.52 210.82 0) (effects (font (size 1.8 1.8)) )) (property "Value" "5 V LED STRIP" (at 355.6 218.44 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "J9") (unit 1))))) (wire (pts (xy 142.24 71.12) (xy 142.24 109.22)) (stroke (width 0) (type default)) (uuid 7c749f4c-1007-5c90-a9a2-f35f4e12eae3)) (wire (pts (xy 142.24 109.22) (xy 264.16 109.22)) (stroke (width 0) (type default)) (uuid 49f76fdc-1f5c-5caa-a4a9-5dc36a6c72c2)) (wire (pts (xy 264.16 109.22) (xy 264.16 213.36)) (stroke (width 0) (type default)) (uuid 32d0cdab-b1dd-5ca3-9156-87f779c0c58b)) (wire (pts (xy 264.16 213.36) (xy 312.42 213.36)) (stroke (width 0) (type default)) (uuid d85b438b-807c-503d-8a1d-62c06f6c2b4b)) (wire (pts (xy 312.42 218.44) (xy 299.72 218.44)) (stroke (width 0) (type default)) (uuid 7a09ed43-89bc-5e00-8524-0f1dfb05edc1)) (text "Centre + / outer contact COM" (at 307.34 198.12 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid 4d90bc66-bd3a-50aa-8785-31c57c825b68)) (symbol (lib_id "Project:Post") (at 381.0 241.3 0) (unit 1) (in_bom yes) (on_board no) (dnp no) (uuid 1cf7a131-fba4-5989-a2a8-1a9c50f9940b) (property "Reference" "J5" (at 381.0 232.41 0) (effects (font (size 1.8 1.8)) )) (property "Value" "GND / BLACK" (at 381.0 250.19 0) (effects (font (size 1.8 1.8)) )) (instances (project "diy_atx_psu" (path "/bf99c0fd-fcfc-5ae7-82ae-bc3beb146f03" (reference "J5") (unit 1))))) (wire (pts (xy 63.5 198.12) (xy 63.5 241.3)) (stroke (width 0) (type default)) (uuid 18a3c434-8183-5642-97f9-da90fd86830d)) (wire (pts (xy 63.5 241.3) (xy 193.04 241.3)) (stroke (width 0) (type default)) (uuid 4d0b4e5a-c373-582a-a216-5c3f7df1df08)) (wire (pts (xy 193.04 241.3) (xy 198.12 241.3)) (stroke (width 0) (type default)) (uuid a5c7d6d1-5973-5c45-a29c-4eda0b7fb802)) (wire (pts (xy 198.12 241.3) (xy 299.72 241.3)) (stroke (width 0) (type default)) (uuid 4c0eb183-be00-58f9-997c-9ae6e6b6f400)) (wire (pts (xy 299.72 241.3) (xy 375.92 241.3)) (stroke (width 0) (type default)) (uuid baf45748-35a7-5679-9652-03861a1107d5)) (junction (at 63.5 241.3) (diameter 0) (color 0 0 0 0) (uuid 7436a801-7eac-584f-94b9-9a7670b89b37)) (junction (at 193.04 241.3) (diameter 0) (color 0 0 0 0) (uuid 6170de39-f57d-57a3-b6a5-b705dfb27d58)) (junction (at 198.12 241.3) (diameter 0) (color 0 0 0 0) (uuid 6df45289-bdcd-554f-9ea4-e1ebd1fadfb4)) (junction (at 299.72 241.3) (diameter 0) (color 0 0 0 0) (uuid 7ce20deb-d843-59cb-9339-1b00102868ce)) (label "COM" (at 76.2 241.3 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid 24734349-a2c2-5ea5-982d-3a58669274f3)) (text "J1: grouped equivalent pins from the standard 24-pin ATX signal map." (at 25.4 259.08 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid c691c599-5c23-5f29-a293-ad6a212ce025)) (text "F1-F3: fixed outputs. F4: adjustable output path shown in the project drawing." (at 25.4 266.7 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid 524a7507-961e-56bc-9521-7748a4855c6f)) (text "PSU and converter internals are not shown. See report for fuse selection and PWR_OK loading." (at 25.4 274.32 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid f1168ceb-858a-5a1d-936e-cc9d3cdb5d20)) (embedded_fonts no))

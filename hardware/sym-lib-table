@@ -1,1 +1,1 @@
-(sym_lib_table (lib (name "Project") (type "KiCad") (uri "${KIPRJMOD}/Project.kicad_sym") (options "") (descr "Project wiring symbols; logical pin maps")))
+(sym_lib_table (lib (name "Project") (type "KiCad") (uri "${KIPRJMOD}/Project.kicad_sym") (options "") (descr "Project module and panel symbols")))
