@@ -45,8 +45,7 @@ flowchart LR
     B --> C[Three fuses]
     C --> D[Fixed output terminals]
     A --> E[12 V to ZK-4KX]
-    E --> K[Adjustable-output fuse F4]
-    K --> F[Adjustable output terminals]
+    E --> F[Adjustable output terminals]
     A --> G[12 V socket and 5 V strip]
     A --> H[Purple: green standby LED]
     A --> I[Gray: red power-good LED]
@@ -74,7 +73,7 @@ Standby power can remain active while the main switch is off. With this arrangem
 
 ### Adjustable output
 
-The ZK-4KX uses the 12 V supply as its input. It can step the voltage up or down and lets us set a current limit. The lower fuse holder belongs to the adjustable section. Our drawing places F4 between OUT+ and the positive terminal; the negative terminal connects to OUT−. Using OUT− keeps the load current in the module's current-measuring path. It does not electrically isolate the output from the PSU. See the [module instructions](https://aitendo3.sakura.ne.jp/aitendo_data/product_img/power/DC-DC/ZK-4KX/ZK-4KX.pdf) for operation.
+The ZK-4KX uses the 12 V supply as its input. It can step the voltage up or down and lets us set a current limit. OUT+ connects directly to the positive terminal; the negative terminal connects to OUT−. There is no separate external fuse in this adjustable-output branch. Using OUT− keeps the load current in the module's current-measuring path. It does not electrically isolate the output from the PSU. See the [module instructions](https://aitendo3.sakura.ne.jp/aitendo_data/product_img/power/DC-DC/ZK-4KX/ZK-4KX.pdf) for operation.
 
 ### Socket, fan and lighting
 
@@ -97,7 +96,6 @@ The schematic shows the low-voltage wiring with the ATX supply on the left and t
 | Fixed output terminals | 4 | 12 V, 5 V, 3.3 V and GND |
 | Adjustable output terminals | 2 | OUT+ and OUT− |
 | Fixed-output fuses and panel holders | 3 | One per fixed positive output |
-| Adjustable-section fuse holder | 1 | F4, represented in the positive output path |
 | Main switch | 1 | PS_ON control |
 | Green LED and red LED | 1 each | Standby and power-good indication |
 | 1 kΩ resistors | 2 | LED current control |
@@ -153,7 +151,7 @@ For an assumed 1 A continuous load per fixed output and a preliminary 75% loadin
 
 `Minimum nominal rating = 1 / 0.75 = 1.33 A`
 
-A 2 A fuse is one possible choice for this example. The final choice also depends on the wire, holder, temperature, startup current and the fuse's ability to interrupt a DC fault. This example does not identify the fuses installed in our box, so the schematic labels them F1–F4 without giving an ampere rating. [Fuse selection reference](https://www.littelfuse.com/assetdocs/fuseology-selection-guide?assetguid=fa4aa360-f6c4-4eec-88a6-3d7ec3fe57d5)
+A 2 A fuse is one possible choice for this example. The final choice also depends on the wire, holder, temperature, startup current and the fuse's ability to interrupt a DC fault. This example does not identify the fuses installed in our box, so the schematic labels them F1–F3 without giving an ampere rating. [Fuse selection reference](https://www.littelfuse.com/assetdocs/fuseology-selection-guide?assetguid=fa4aa360-f6c4-4eec-88a6-3d7ec3fe57d5)
 
 [Detailed calculations](docs/calculations.md)
 
@@ -188,7 +186,7 @@ The following table summarizes the team's reported functional test results. Resu
 
 PS_ON, +5VSB and PWR_OK have different jobs. PS_ON turns on the main outputs, +5VSB supplies standby power, and PWR_OK indicates that the main outputs are ready. The terminal colors on our panel differ from the ATX wire colors, so we use the voltage labels when connecting a load.
 
-The 1 kΩ resistors limit LED current. F1–F3 protect the fixed-output branches, and our drawing places F4 after the adjustable module. The socket and LED strip have no separate external branch fuses. These branches and the direct PWR_OK LED connection need to be considered when assessing the circuit's protection. The adjustable output is also limited by input power, conversion losses and cooling.
+The 1 kΩ resistors limit LED current. F1–F3 protect the three fixed-output branches. The adjustable output has no separate external branch fuse. The socket and LED strip have no separate external branch fuses. These branches and the direct PWR_OK LED connection need to be considered when assessing the circuit's protection. The adjustable output is also limited by input power, conversion losses and cooling.
 
 ## 9. Operation
 
